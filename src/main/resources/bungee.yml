@@ -1,0 +1,3 @@
+name: lifeban
+version: '${project.version}'
+main: com.lampalon.lifeban.Lifeban
