@@ -25,7 +25,7 @@ public final class Lifeban extends Plugin {
         mySQL.openConnection();
         if(mySQL.isConnected()) {
             logToConsole("§aMySQL connection success, creating tables..");
-            mySQL.update("CREATE TABLE IF NOT EXISTS LifeBan(Playername VARCHAR(16), banEnd LONG, banReason VARCHAR(256), banBy VARCHAR(16))");
+            mySQL.update("CREATE TABLE IF NOT EXISTS LifeBa(Playername VARCHAR(16), banEnd LONG, banReason VARCHAR(256), banBy VARCHAR(16))");
             mySQL.update("CREATE TABLE IF NOT EXISTS LifeMutes(Playername VARCHAR(16), muteEnd LONG, muteReason VARCHAR(256), muteBy VARCHAR(16))");
         }
     }
