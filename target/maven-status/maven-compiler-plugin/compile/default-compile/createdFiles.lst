@@ -1,0 +1,6 @@
+com\lampalon\lifeban\Lifeban.class
+com\lampalon\lifeban\utils\ConfigManager.class
+com\lampalon\lifeban\sql\MySQL.class
+com\lampalon\lifeban\Lifeban$TimeUnit.class
+com\lampalon\lifeban\sql\MySQL$1.class
+com\lampalon\lifeban\sql\MySQL$MySQLCredentials.class

@@ -1,3 +1,4 @@
 name: lifeban
+author: Lampalon
 version: '${project.version}'
 main: com.lampalon.lifeban.Lifeban
