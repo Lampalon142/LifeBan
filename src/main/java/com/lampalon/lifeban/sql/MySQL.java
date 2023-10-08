@@ -9,7 +9,7 @@ public class MySQL {
     private int port = 3306;
     private String username = "root";
     private String password = "";
-    private String database = "strengcraft";
+    private String database = "LifeBan";
     private Connection conn;
 
     public MySQL(String host, int port, String username, String password, String database) {
