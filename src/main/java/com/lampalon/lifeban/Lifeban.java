@@ -1,7 +1,10 @@
 package com.lampalon.lifeban;
 
+import com.lampalon.lifeban.events.ChatEvent;
+import com.lampalon.lifeban.events.LoginEvent;
 import com.lampalon.lifeban.sql.MySQL;
 import com.lampalon.lifeban.utils.ConfigManager;
+import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
 
@@ -28,6 +31,9 @@ public final class Lifeban extends Plugin {
             mySQL.update("CREATE TABLE IF NOT EXISTS LifeBa(Playername VARCHAR(16), banEnd LONG, banReason VARCHAR(256), banBy VARCHAR(16))");
             mySQL.update("CREATE TABLE IF NOT EXISTS LifeMutes(Playername VARCHAR(16), muteEnd LONG, muteReason VARCHAR(256), muteBy VARCHAR(16))");
         }
+        PluginManager pm = BungeeCord.getInstance().getPluginManager();
+        pm.registerListener(this, new ChatEvent());
+        pm.registerListener(this, new LoginEvent());
     }
     public static Lifeban getInstance() {
         return instance;
