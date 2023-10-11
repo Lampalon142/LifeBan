@@ -1,3 +1,8 @@
 name: lifeban
+author: Lampalon
 version: '1.0.0-SNAPSHOT'
 main: com.lampalon.lifeban.Lifeban
+commands:
+  check:
+  ban:
+  unban:

@@ -39,3 +39,431 @@
 12:35:26 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
 12:35:26 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
 12:35:27 [INFOS] Listening on /0.0.0.0:25577
+15:47:27 [INFOS] Using standard Java JCE cipher.
+15:47:27 [INFOS] Using standard Java compressor.
+15:47:27 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+15:47:28 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+15:47:28 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+15:47:28 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+15:47:28 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+15:47:28 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+15:47:28 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:47:28 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:47:28 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [AVERTISSEMENT] Forced host server pvp is not defined
+15:47:28 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:28 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:44 [GRAVE] java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:889)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:814)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+15:47:44 [GRAVE] 	at java.sql.DriverManager.getConnection(Unknown Source)
+15:47:44 [GRAVE] 	at java.sql.DriverManager.getConnection(Unknown Source)
+15:47:44 [GRAVE] 	at com.lampalon.lifeban.sql.MySQL.openConnection(MySQL.java:38)
+15:47:44 [GRAVE] 	at com.lampalon.lifeban.Lifeban.onEnable(Lifeban.java:27)
+15:47:44 [GRAVE] 	at net.md_5.bungee.api.plugin.PluginManager.enablePlugins(PluginManager.java:266)
+15:47:44 [GRAVE] 	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:295)
+15:47:44 [GRAVE] 	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:67)
+15:47:44 [GRAVE] 	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+15:47:44 [GRAVE] Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+15:47:44 [GRAVE] 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+15:47:44 [GRAVE] 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+15:47:44 [GRAVE] 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+15:47:44 [GRAVE] 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+15:47:44 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+15:47:44 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+15:47:44 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+15:47:44 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+15:47:44 [GRAVE] 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+15:47:44 [GRAVE] 	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+15:47:44 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:833)
+15:47:44 [GRAVE] 	... 12 more
+15:47:44 [GRAVE] Caused by: java.net.ConnectException: Connection refused: connect
+15:47:44 [GRAVE] 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+15:47:44 [GRAVE] 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+15:47:44 [GRAVE] 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+15:47:44 [GRAVE] 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+15:47:44 [GRAVE] 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+15:47:44 [GRAVE] 	at java.net.PlainSocketImpl.connect(Unknown Source)
+15:47:44 [GRAVE] 	at java.net.SocksSocketImpl.connect(Unknown Source)
+15:47:44 [GRAVE] 	at java.net.Socket.connect(Unknown Source)
+15:47:44 [GRAVE] 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+15:47:44 [GRAVE] 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+15:47:44 [GRAVE] 	... 14 more
+15:47:44 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:47:44 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:44 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:44 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:45 [INFOS] Listening on /0.0.0.0:25578
+15:47:51 [INFOS] Using standard Java JCE cipher.
+15:47:51 [INFOS] Using standard Java compressor.
+15:47:51 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+15:47:51 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+15:47:51 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+15:47:51 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+15:47:51 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+15:47:51 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+15:47:51 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:47:51 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:47:51 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [AVERTISSEMENT] Forced host server pvp is not defined
+15:47:51 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:51 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:56 [GRAVE] java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:889)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:814)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+15:47:56 [GRAVE] 	at java.sql.DriverManager.getConnection(Unknown Source)
+15:47:56 [GRAVE] 	at java.sql.DriverManager.getConnection(Unknown Source)
+15:47:56 [GRAVE] 	at com.lampalon.lifeban.sql.MySQL.openConnection(MySQL.java:38)
+15:47:56 [GRAVE] 	at com.lampalon.lifeban.Lifeban.onEnable(Lifeban.java:27)
+15:47:56 [GRAVE] 	at net.md_5.bungee.api.plugin.PluginManager.enablePlugins(PluginManager.java:266)
+15:47:56 [GRAVE] 	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:295)
+15:47:56 [GRAVE] 	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:67)
+15:47:56 [GRAVE] 	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+15:47:56 [GRAVE] Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+15:47:56 [GRAVE] 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+15:47:56 [GRAVE] 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+15:47:56 [GRAVE] 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+15:47:56 [GRAVE] 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+15:47:56 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+15:47:56 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+15:47:56 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+15:47:56 [GRAVE] 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:128)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:849)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:771)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:739)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:156)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:468)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
+15:47:56 [GRAVE] 	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
+15:47:56 [GRAVE] 	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
+15:47:56 [GRAVE] 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:833)
+15:47:56 [GRAVE] 	... 12 more
+15:47:56 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:47:56 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:56 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:56 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:47:56 [INFOS] Listening on /0.0.0.0:25578
+15:51:12 [INFOS] Using standard Java JCE cipher.
+15:51:12 [INFOS] Using standard Java compressor.
+15:51:12 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+15:51:12 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+15:51:12 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+15:51:12 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+15:51:12 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+15:51:12 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+15:51:12 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:51:12 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:51:12 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [AVERTISSEMENT] Forced host server pvp is not defined
+15:51:12 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:12 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:13 [INFOS] §a§lMySQL connection success, creating tables..
+15:51:13 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:51:13 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:13 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:13 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:51:13 [INFOS] Listening on /0.0.0.0:25578
+15:51:15 [INFOS] §8| §3§lLifeBan §8| 
+15:51:17 [INFOS] §8| §3§lLifeBan §8| §cUsage: §c/check <Player>
+15:51:23 [GRAVE] java.sql.SQLSyntaxErrorException: Table 'test.lifeban' doesn't exist
+15:51:23 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+15:51:23 [GRAVE] 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+15:51:23 [GRAVE] 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+15:51:23 [GRAVE] 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+15:51:23 [GRAVE] 	at com.lampalon.lifeban.sql.MySQL.getResult(MySQL.java:77)
+15:51:23 [GRAVE] 	at com.lampalon.lifeban.utils.Profile.init(Profile.java:30)
+15:51:23 [GRAVE] 	at com.lampalon.lifeban.utils.Profile.<init>(Profile.java:25)
+15:51:23 [GRAVE] 	at com.lampalon.lifeban.commands.CheckCommand$1.run(CheckCommand.java:26)
+15:51:23 [GRAVE] 	at net.md_5.bungee.scheduler.BungeeTask.run(BungeeTask.java:63)
+15:51:23 [GRAVE] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+15:51:23 [GRAVE] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+15:51:23 [GRAVE] 	at java.lang.Thread.run(Unknown Source)
+15:51:23 [GRAVE] Task BungeeTask(sched=net.md_5.bungee.scheduler.BungeeScheduler@2421cc4, id=2, owner=com.lampalon.lifeban.Lifeban@327bcebd, task=com.lampalon.lifeban.commands.CheckCommand$1@628c4ac0, delay=0, period=0, running=true) encountered an exception
+java.lang.NullPointerException
+	at com.lampalon.lifeban.utils.Profile.init(Profile.java:31)
+	at com.lampalon.lifeban.utils.Profile.<init>(Profile.java:25)
+	at com.lampalon.lifeban.commands.CheckCommand$1.run(CheckCommand.java:26)
+	at net.md_5.bungee.scheduler.BungeeTask.run(BungeeTask.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+15:54:44 [INFOS] Using standard Java JCE cipher.
+15:54:44 [INFOS] Using standard Java compressor.
+15:54:44 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+15:54:44 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+15:54:44 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+15:54:44 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+15:54:44 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+15:54:44 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+15:54:44 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:54:44 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:54:44 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [AVERTISSEMENT] Forced host server pvp is not defined
+15:54:44 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:44 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:45 [INFOS] §a§lMySQL connection success, creating tables..
+15:54:45 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+15:54:45 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:45 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:45 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+15:54:45 [INFOS] Listening on /0.0.0.0:25578
+15:54:49 [INFOS] §8| §3§lLifeBan §8| 
+15:54:50 [INFOS] §8| §3§lLifeBan §8| §cUsage: §c/check <Player>
+15:54:56 [INFOS] §8| §3§lLifeBan §8| 
+15:54:56 [INFOS] §8| §3§lLifeBan §8| §fThe player §eLampalon122 §fis not banned.
+15:55:00 [INFOS] §8| §3§lLifeBan §8| 
+15:55:00 [INFOS] §8| §3§lLifeBan §8| §fThe player §eLampalon_ §fis not banned.
+15:55:03 [INFOS] §8| §3§lLifeBan §8| 
+15:55:06 [INFOS] §8| §3§lLifeBan §8| 
+15:55:12 [INFOS] §8| §3§lLifeBan §8| 
+15:55:12 [INFOS] §8| §3§lLifeBan §8| §fThe player §eLampalon §fis not banned.
+17:49:10 [INFOS] Using standard Java JCE cipher.
+17:49:10 [INFOS] Using standard Java compressor.
+17:49:10 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+17:49:10 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+17:49:10 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+17:49:10 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+17:49:10 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+17:49:10 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+17:49:10 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+17:49:11 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+17:49:11 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [AVERTISSEMENT] Forced host server pvp is not defined
+17:49:11 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:11 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:25 [INFOS] §a§lMySQL connection success, creating tables..
+17:49:25 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+17:49:25 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:25 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:25 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:49:25 [INFOS] Listening on /0.0.0.0:25578
+17:49:57 [INFOS] §8| §3§lLifeBan §8| §cUsage: §c/ban <Player> <Time> <TimeUnit> <Reason>
+17:50:09 [INFOS] An interal error occured
+17:50:12 [INFOS] An interal error occured
+17:50:15 [INFOS] §8| §3§lLifeBan §8| §cUsage: §c/ban <Player> <Time> <TimeUnit> <Reason>
+17:50:22 [INFOS] An interal error occured
+17:59:40 [INFOS] Using standard Java JCE cipher.
+17:59:40 [INFOS] Using standard Java compressor.
+17:59:40 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+17:59:40 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+17:59:40 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+17:59:40 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+17:59:40 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+17:59:40 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+17:59:40 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+17:59:40 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+17:59:40 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [AVERTISSEMENT] Forced host server pvp is not defined
+17:59:40 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] §a§lMySQL connection success, creating tables..
+17:59:40 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+17:59:40 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:40 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+17:59:41 [INFOS] Listening on /0.0.0.0:25578
+17:59:43 [INFOS] §8| §3§lLifeBan §8| §cUsage: §c/ban <Player> <Time> <TimeUnit> <Reason>
+17:59:50 [INFOS] §8| §3§lLifeBan §8| Usage: /ban <user> <time> <reason>
+17:59:52 [INFOS] §8| §3§lLifeBan §8| Usage: /ban <user> <time> <reason>
+17:59:53 [INFOS] §8| §3§lLifeBan §8| Usage: /ban <user> <time> <reason>
+17:59:54 [INFOS] §8| §3§lLifeBan §8| Usage: /ban <user> <time> <reason>
+17:59:56 [INFOS] §8| §3§lLifeBan §8| Usage: /ban <user> <time> <reason>
+18:01:18 [INFOS] Using standard Java JCE cipher.
+18:01:18 [INFOS] Using standard Java compressor.
+18:01:18 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+18:01:18 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+18:01:18 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+18:01:18 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+18:01:18 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+18:01:18 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+18:01:18 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+18:01:18 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+18:01:18 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [AVERTISSEMENT] Forced host server pvp is not defined
+18:01:18 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] §a§lMySQL connection success, creating tables..
+18:01:18 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+18:01:18 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:18 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:01:19 [INFOS] Listening on /0.0.0.0:25578
+18:01:20 [INFOS] §8| §3§lLifeBan §8| Usage: /ban <user> <time> [reason]
+18:01:27 [INFOS] §8| §3§lLifeBan §8| §aYou have successfully banned §eLampalon122§a.
+18:01:30 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis already banned.
+18:01:35 [INFOS] §8| §3§lLifeBan §8| 
+18:01:35 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:01:35 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:01:35 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:01:35 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 29 min(s) and 51 sec(s)
+18:03:13 [INFOS] [/127.0.0.1:50701] <-> InitialHandler has pinged
+18:03:15 [INFOS] [/127.0.0.1:50702] <-> InitialHandler has connected
+18:08:37 [INFOS] Using standard Java JCE cipher.
+18:08:37 [INFOS] Using standard Java compressor.
+18:08:37 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+18:08:37 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+18:08:37 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+18:08:37 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+18:08:37 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+18:08:37 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+18:08:37 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+18:08:37 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+18:08:37 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [AVERTISSEMENT] Forced host server pvp is not defined
+18:08:37 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] §a§lMySQL connection success, creating tables..
+18:08:37 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+18:08:37 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:37 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:08:38 [INFOS] Listening on /0.0.0.0:25578
+18:08:40 [INFOS] [/127.0.0.1:50887] <-> InitialHandler has connected
+18:08:43 [INFOS] [/127.0.0.1:50888] <-> InitialHandler has connected
+18:09:03 [INFOS] §8| §3§lLifeBan §8| 
+18:09:03 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:09:03 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:09:03 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:09:03 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 22 min(s) and 24 sec(s)
+18:22:12 [INFOS] §8| §3§lLifeBan §8| 
+18:22:12 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:22:12 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:22:12 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:22:12 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 9 min(s) and 14 sec(s)
+18:28:05 [INFOS] §8| §3§lLifeBan §8| 
+18:28:05 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:28:05 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:28:05 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:28:05 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 3 min(s) and 22 sec(s)
+18:28:06 [INFOS] §8| §3§lLifeBan §8| 
+18:28:06 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:28:06 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:28:06 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:28:06 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 3 min(s) and 20 sec(s)
+18:34:03 [INFOS] §8| §3§lLifeBan §8| 
+18:34:03 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:34:03 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:34:03 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:34:03 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 0 min(s) and 0 sec(s)
+18:34:06 [INFOS] §8| §3§lLifeBan §8| 
+18:34:06 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis §4§lBANNED§c.
+18:34:06 [INFOS] §8| §3§lLifeBan §8| §cReason: §etest
+18:34:06 [INFOS] §8| §3§lLifeBan §8| §cBy: §eCONSOLE
+18:34:06 [INFOS] §8| §3§lLifeBan §8| §cRemaining time: §e0 day(s), 0 hour(s), 0 min(s) and 0 sec(s)
+18:34:11 [INFOS] §cCommand not found
+18:34:16 [INFOS] §cCommand not found
+18:36:18 [INFOS] Using standard Java JCE cipher.
+18:36:18 [INFOS] Using standard Java compressor.
+18:36:18 [INFOS] Enabled BungeeCord version git:BungeeCord-Bootstrap:1.20-R0.2-SNAPSHOT:a7dbbc2:1756
+18:36:18 [INFOS] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=JenkinsModuleSource())
+18:36:18 [INFOS] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=JenkinsModuleSource())
+18:36:18 [INFOS] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=JenkinsModuleSource())
+18:36:18 [INFOS] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=JenkinsModuleSource())
+18:36:18 [INFOS] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=JenkinsModuleSource())
+18:36:18 [INFOS] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=JenkinsModuleSource())
+18:36:18 [INFOS] Loaded plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Loaded plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Loaded plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Loaded plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+18:36:18 [INFOS] Loaded plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Loaded plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Loaded plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [AVERTISSEMENT] Forced host server pvp is not defined
+18:36:18 [INFOS] Enabled plugin reconnect_yaml version git:reconnect_yaml:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Enabled plugin cmd_find version git:cmd_find:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Enabled plugin cmd_server version git:cmd_server:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] §a§lMySQL connection success, creating tables..
+18:36:18 [INFOS] Enabled plugin lifeban version 1.0.0-SNAPSHOT by Lampalon
+18:36:18 [INFOS] Enabled plugin cmd_alert version git:cmd_alert:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Enabled plugin cmd_send version git:cmd_send:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:18 [INFOS] Enabled plugin cmd_list version git:cmd_list:1.20-R0.2-SNAPSHOT:a7dbbc2:1756 by SpigotMC
+18:36:19 [INFOS] Listening on /0.0.0.0:25578
+18:36:23 [INFOS] §8| §3§lLifeBan §8| 
+18:36:23 [GRAVE] Task BungeeTask(sched=net.md_5.bungee.scheduler.BungeeScheduler@68702e03, id=2, owner=com.lampalon.lifeban.Lifeban@65b104b9, task=com.lampalon.lifeban.commands.CheckCommand$1@1b73be9f, delay=0, period=0, running=true) encountered an exception
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.lampalon.lifeban.utils.ConfigManager.getStringList(ConfigManager.java:70)
+	at com.lampalon.lifeban.commands.CheckCommand$1.run(CheckCommand.java:33)
+	at net.md_5.bungee.scheduler.BungeeTask.run(BungeeTask.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+18:36:35 [INFOS] §8| §3§lLifeBan §8| 
+18:36:35 [GRAVE] Task BungeeTask(sched=net.md_5.bungee.scheduler.BungeeScheduler@68702e03, id=3, owner=com.lampalon.lifeban.Lifeban@65b104b9, task=com.lampalon.lifeban.commands.CheckCommand$1@7b84fcf8, delay=0, period=0, running=true) encountered an exception
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.lampalon.lifeban.utils.ConfigManager.getStringList(ConfigManager.java:70)
+	at com.lampalon.lifeban.commands.CheckCommand$1.run(CheckCommand.java:33)
+	at net.md_5.bungee.scheduler.BungeeTask.run(BungeeTask.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+18:36:43 [INFOS] §8| §3§lLifeBan §8| §aYou have successfully unbanned §eLampalon122§a.
+18:36:50 [INFOS] §8| §3§lLifeBan §8| §cThe player §eLampalon122 §cis not banned.
+18:39:03 [INFOS] [/127.0.0.1:51263] <-> InitialHandler has connected
+18:39:06 [INFOS] [Lampalon122] disconnected with: §cCould not connect to a default or fallback server. Incorrectly configured address/port/firewall? io.netty.channel.AbstractChannel$AnnotatedConnectException
+18:39:06 [INFOS] [Lampalon122] -> UpstreamBridge has disconnected

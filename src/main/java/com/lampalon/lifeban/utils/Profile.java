@@ -1,7 +1,6 @@
 package com.lampalon.lifeban.utils;
 
 import com.lampalon.lifeban.Lifeban;
-import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.sql.ResultSet;
@@ -24,6 +23,13 @@ public class Profile {
     public Profile(String player) {
         this.playerName = player;
         init();
+    }
+    private long parseTime(String timeString) {
+        if (timeString.matches("^\\d+m$")) {
+            long minutes = Long.parseLong(timeString.replaceAll("[^\\d]", ""));
+            return minutes * 60 * 1000;
+        }
+        return 0;
     }
 
     private void init() {
@@ -61,6 +67,15 @@ public class Profile {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    public void autounban(){
+        this.isBanned = false;
+        this.banBy = "";
+        this.banEnd = 0;
+        this.banReason = "";
+
+        String query = "DELETE FROM LifeBan WHERE Playername = ?";
+        Lifeban.getMySQL().update(query);
     }
 
     public void refreshPlayerData() {
@@ -151,7 +166,7 @@ public class Profile {
     }
 
     public ProxiedPlayer toProxiedPlayer() {
-        return BungeeCord.getInstance().getPlayer(playerName);
+        return Lifeban.getInstance().getProxy().getPlayer(playerName);
     }
 
 

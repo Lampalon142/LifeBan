@@ -1,10 +1,12 @@
 package com.lampalon.lifeban;
 
+import com.lampalon.lifeban.commands.BanCommand;
+import com.lampalon.lifeban.commands.CheckCommand;
+import com.lampalon.lifeban.commands.UnBanCommand;
 import com.lampalon.lifeban.events.ChatEvent;
 import com.lampalon.lifeban.events.LoginEvent;
 import com.lampalon.lifeban.sql.MySQL;
 import com.lampalon.lifeban.utils.ConfigManager;
-import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
 
@@ -27,13 +29,16 @@ public final class Lifeban extends Plugin {
         mySQL = new MySQL(credentials);
         mySQL.openConnection();
         if(mySQL.isConnected()) {
-            logToConsole("§aMySQL connection success, creating tables..");
-            mySQL.update("CREATE TABLE IF NOT EXISTS LifeBa(Playername VARCHAR(16), banEnd LONG, banReason VARCHAR(256), banBy VARCHAR(16))");
+            logToConsole("§a§lMySQL connection success, creating tables..");
+            mySQL.update("CREATE TABLE IF NOT EXISTS LifeBan(Playername VARCHAR(16), banEnd LONG, banReason VARCHAR(256), banBy VARCHAR(16))");
             mySQL.update("CREATE TABLE IF NOT EXISTS LifeMutes(Playername VARCHAR(16), muteEnd LONG, muteReason VARCHAR(256), muteBy VARCHAR(16))");
         }
-        PluginManager pm = BungeeCord.getInstance().getPluginManager();
+        PluginManager pm = Lifeban.getInstance().getProxy().getPluginManager();
         pm.registerListener(this, new ChatEvent());
         pm.registerListener(this, new LoginEvent());
+        pm.registerCommand(getInstance(), new BanCommand("ban"));
+        pm.registerCommand(getInstance(), new UnBanCommand("unban"));
+        pm.registerCommand(getInstance(), new CheckCommand("check"));
     }
     public static Lifeban getInstance() {
         return instance;

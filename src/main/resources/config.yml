@@ -1,14 +1,26 @@
+#########################
+#+---------------------+#
+#+------ Database -----+#
+#+---------------------+#
+#########################
+
 mysql:
   host: 'localhost'
   port: 3306
   username: 'root'
-  password: 'r'
-  database: 'test'
+  password: ''
+  database: 'lifeban'
+
+#########################
+#+---------------------+#
+#+------ Lang ---------+#
+#+---------------------+#
+#########################
 
 messages:
 
-  prefix: '&8| &3&lBungee&b&lBan &8| '
-  console_prefix: '[BungeeBan] '
+  prefix: '&8| &3&lLifeBan &8| '
+  console_prefix: '[LifeBan] '
   time_format: '{DAYS} day(s), {HOURS} hour(s), {MINUTES} min(s) and {SECONDS} sec(s)'
   time_format_permanent: 'PERMANENT'
 

@@ -1,24 +1,42 @@
 mysql:
-  host: 'localhost'
+  host: localhost
   port: 3306
-  username: 'root'
+  username: root
   password: ''
-  database: 'test'
-
+  database: test
 messages:
-
-  prefix: '&8| &3&lBungee&b&lBan &8| '
-  console_prefix: '[BungeeBan] '
+  prefix: '&8| &3&lLifeBan &8| '
+  console_prefix: '[LifeBan] '
   time_format: '{DAYS} day(s), {HOURS} hour(s), {MINUTES} min(s) and {SECONDS} sec(s)'
-  time_format_permanent: 'PERMANENT'
-
-  errors:
-    no_permissions: '&cYou are not allowed to use this.'
-    player_not_found: '&cThis player could not be found.'
-    player_not_online: '&cThe player &e{NAME} &cis not online.'
-    internal_error: '&cAn internal error occured: &e{DETAILS}'
-    player_already_banned: '&cThe player &e{NAME} &cis already banned.'
-    player_not_banned: '&cThe player &e{NAME} &cis not banned.'
-    player_already_muted: '&cThe player &e{NAME} &cis already muted.'
-    player_not_muted: '&cThe player &e{NAME} &cis not muted.'
-    unknown_timeunit: '&cUnknown timunit.'
+  time_format_permanent: PERMANENT
+  no_permissions: '&cYou are not allowed to use this.'
+  player_not_found: '&cThis player could not be found.'
+  player_not_online: '&cThe player &e{NAME} &cis not online.'
+  internal_error: '&cAn internal error occured: &e{DETAILS}'
+  player_already_banned: '&cThe player &e{NAME} &cis already banned.'
+  player_not_banned: '&cThe player &e{NAME} &cis not banned.'
+  player_already_muted: '&cThe player &e{NAME} &cis already muted.'
+  player_not_muted: '&cThe player &e{NAME} &cis not muted.'
+  unknown_timeunit: '&cUnknown timunit.'
+  ban:
+    syntax: '&cUsage: &c/ban <Player> <Time> <TimeUnit> <Reason>'
+    banned: '&aYou have successfully banned &e{NAME}&a.'
+    broadcast:
+    - '&e{NAME} &chas been banned by &e{BY}&c.'
+    - '&cReason: &e{REASON}'
+    - '&cTime: &e{REMAININGTIME}'
+  unban:
+    syntax: '&cUsage: &c/unban <Player>'
+    unbanned: '&aYou have successfully unbanned &e{NAME}&a.'
+    broadcast:
+    - '&e{NAME} &chas been unbanned by &e{BY}&c.'
+  check:
+    syntax: '&cUsage: &c/check <Player>'
+    banned:
+      positive:
+      - '&cThe player &e{NAME} &cis &4&lBANNED&c.'
+      - '&cReason: &e{REASON}'
+      - '&cBy: &e{BY}'
+      - '&cRemaining time: &e{REMAININGTIME}'
+      negative:
+      - '&fThe player &e{NAME} &fis not banned.'

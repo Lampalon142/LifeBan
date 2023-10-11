@@ -2,7 +2,6 @@ package com.lampalon.lifeban.commands;
 
 import com.lampalon.lifeban.Lifeban;
 import com.lampalon.lifeban.utils.Profile;
-import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.plugin.Command;
 
@@ -16,7 +15,7 @@ public class CheckCommand extends Command {
 
     public void execute(final CommandSender sender, final String[] args)
     {
-        BungeeCord.getInstance().getScheduler().runAsync(Lifeban.getInstance(), new Runnable()
+        Lifeban.getInstance().getProxy().getScheduler().runAsync(Lifeban.getInstance(), new Runnable()
         {
             public void run()
             {
