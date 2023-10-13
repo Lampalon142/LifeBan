@@ -6,3 +6,5 @@ commands:
   check:
   ban:
   unban:
+  mute:
+  unmute:
