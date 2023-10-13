@@ -1,3 +1,10 @@
 name: lifeban
+author: Lampalon
 version: '${project.version}'
 main: com.lampalon.lifeban.Lifeban
+commands:
+  check:
+  ban:
+  unban:
+  mute:
+  unmute:
