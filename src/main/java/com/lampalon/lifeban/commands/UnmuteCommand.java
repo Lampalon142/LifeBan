@@ -13,7 +13,7 @@ public class UnmuteCommand extends Command {
     ;
 
     public void execute(final CommandSender sender, final String[] args) {
-        if(sender.hasPermission("bungeeban.command.unmute")) {
+        if(sender.hasPermission("lifeban.unmute")) {
             if(args.length == 1) {
                 String playerName = args[0];
                 Profile profile = new Profile(playerName);
