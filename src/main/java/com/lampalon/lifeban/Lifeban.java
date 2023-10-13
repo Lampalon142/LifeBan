@@ -10,6 +10,10 @@ import com.lampalon.lifeban.sql.MySQL;
 import com.lampalon.lifeban.utils.ConfigManager;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
+import org.bstats.bungeecord.Metrics;
+import org.bstats.charts.SingleLineChart;
+
+import java.util.concurrent.Callable;
 
 public final class Lifeban extends Plugin {
     private static ConfigManager configManager;
@@ -90,5 +94,17 @@ public final class Lifeban extends Plugin {
             }
             return null;
         }
+    }
+
+    private void utils(){
+        int pluginId = 20051;
+        Metrics metrics = new Metrics(this, pluginId);
+        metrics.addCustomChart(new SingleLineChart("players", new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                return Lifeban.getInstance().getProxy().getPlayers().size();
+            }
+        }));
+        Lifeban.getInstance().getProxy().getConsole().sendMessage("§eBStats collect some information's for Lampalon_ thanks for your trust.");
     }
 }
