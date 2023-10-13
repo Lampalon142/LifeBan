@@ -68,15 +68,6 @@ public class Profile {
             e.printStackTrace();
         }
     }
-    public void autounban(){
-        this.isBanned = false;
-        this.banBy = "";
-        this.banEnd = 0;
-        this.banReason = "";
-
-        String query = "DELETE FROM LifeBan WHERE Playername = ?";
-        Lifeban.getMySQL().update(query);
-    }
 
     public void refreshPlayerData() {
         init();
@@ -228,7 +219,7 @@ public class Profile {
                 }
                 return Lifeban.getConfigManager().timeFormat(days, hours, minutes, seconds);
             }
-            return Lifeban.getConfigManager().getString("lang.time_format_permanent");
+            return Lifeban.getConfigManager().getString("messages.time_format_permanent");
         }
         return null;
     }
@@ -267,14 +258,14 @@ public class Profile {
                 }
                 return Lifeban.getConfigManager().timeFormat(days, hours, minutes, seconds);
             }
-            return Lifeban.getConfigManager().getString("lang.time_format_permanent");
+            return Lifeban.getConfigManager().getString("messages.time_format_permanent");
         }
         return null;
     }
 
     public String getMuteMessage()
     {
-        List<String> lines = Lifeban.getConfigManager().getStringList("lang.mutemessage", new String[] {"{REASON}~" +
+        List<String> lines = Lifeban.getConfigManager().getStringList("messages.mutemessage", new String[] {"{REASON}~" +
                 getMuteReason(), "{BY}~" +
                 getMutedBy(), "{REMAININGTIME}~" +
                 getRemainingmuteTime() });
@@ -287,7 +278,7 @@ public class Profile {
 
     public String getBanKickMessage()
     {
-        List<String> lines = Lifeban.getConfigManager().getStringList("lang.banmessage", new String[] {"{REASON}~" +
+        List<String> lines = Lifeban.getConfigManager().getStringList("messages.banmessage", new String[] {"{REASON}~" +
                 getBanReason(), "{BY}~" +
                 getBanBy(), "{REMAININGTIME}~" +
                 getRemainingbanTime() });

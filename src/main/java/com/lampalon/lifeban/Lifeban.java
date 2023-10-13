@@ -2,7 +2,8 @@ package com.lampalon.lifeban;
 
 import com.lampalon.lifeban.commands.BanCommand;
 import com.lampalon.lifeban.commands.CheckCommand;
-import com.lampalon.lifeban.commands.UnBanCommand;
+import com.lampalon.lifeban.commands.MuteCommand;
+import com.lampalon.lifeban.commands.UnbanCommand;
 import com.lampalon.lifeban.events.ChatEvent;
 import com.lampalon.lifeban.events.LoginEvent;
 import com.lampalon.lifeban.sql.MySQL;
@@ -37,8 +38,9 @@ public final class Lifeban extends Plugin {
         pm.registerListener(this, new ChatEvent());
         pm.registerListener(this, new LoginEvent());
         pm.registerCommand(getInstance(), new BanCommand("ban"));
-        pm.registerCommand(getInstance(), new UnBanCommand("unban"));
+        pm.registerCommand(getInstance(), new UnbanCommand("unban"));
         pm.registerCommand(getInstance(), new CheckCommand("check"));
+        pm.registerCommand(getInstance(), new MuteCommand("mute"));
     }
     public static Lifeban getInstance() {
         return instance;

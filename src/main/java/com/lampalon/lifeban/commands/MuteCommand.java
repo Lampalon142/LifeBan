@@ -9,13 +9,15 @@ import net.md_5.bungee.api.scheduler.ScheduledTask;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-public class BanCommand extends Command {
-    public BanCommand(String name) {
+public class MuteCommand extends Command {
+    public MuteCommand(String name)
+    {
         super(name);
     }
+    ;
 
     public void execute(final CommandSender sender, final String[] args) {
-        if (sender.hasPermission("lifeban.ban")) {
+        if(sender.hasPermission("lifeban.mute")) {
             if (args.length >= 2) {
                 String playerName = args[0];
                 String timeAndReason = args[1];
@@ -28,20 +30,19 @@ public class BanCommand extends Command {
                         try {
                             long timeValue = Long.parseLong(timeString);
                             long seconds = unit.getSeconds() * timeValue;
-
-                            String reason = args.length > 2 ? String.join(" ", Arrays.copyOfRange(args, 2, args.length)) : Lifeban.getConfigManager().getString("messages.ban.none_reason");
+                            String reason = args.length > 2 ? String.join(" ", Arrays.copyOfRange(args, 2, args.length)) : Lifeban.getConfigManager().getString("messages.mute.none_reason");
 
                             Profile profile = new Profile(playerName);
                             if (profile != null) {
-                                if (!profile.isBanned()) {
-                                    profile.setBanned(reason, sender.getName(), seconds);
-                                    sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.ban.banned", new String[]{"{NAME}~" + playerName}));
+                                if (!profile.isMuted()) {
+                                    profile.setMute(reason, sender.getName(), seconds);
+                                    sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.mute.muted", new String[]{"{NAME}~" + playerName}));
 
-                                    ScheduledTask unbanTask = Lifeban.getInstance().getProxy().getScheduler().schedule(Lifeban.getInstance(), () -> {
-                                        profile.unban();
+                                    ScheduledTask unmuteTask = Lifeban.getInstance().getProxy().getScheduler().schedule(Lifeban.getInstance(), () -> {
+                                        profile.unmute();
                                     }, seconds, TimeUnit.SECONDS);
                                 } else {
-                                    sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.player_already_banned", new String[]{"{NAME}~" + playerName}));
+                                    sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.player_already_muted", new String[]{"{NAME}~" + playerName}));
                                 }
                             } else {
                                 sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.player_not_found"));
@@ -56,11 +57,10 @@ public class BanCommand extends Command {
                     sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.unknown_format"));
                 }
             } else {
-                sender.sendMessage(Lifeban.PREFIX +  Lifeban.getConfigManager().getString("messages.ban.syntax"));
+                sender.sendMessage(Lifeban.PREFIX +  Lifeban.getConfigManager().getString("messages.mute.syntax"));
             }
         } else {
             sender.sendMessage(Lifeban.PREFIX + Lifeban.getConfigManager().getString("messages.no_permissions"));
-        }
+        };
     }
-
 }

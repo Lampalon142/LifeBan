@@ -5,15 +5,15 @@ import com.lampalon.lifeban.utils.Profile;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.plugin.Command;
 
-public class UnBanCommand extends Command {
-    public UnBanCommand(String name)
+public class UnbanCommand extends Command {
+    public UnbanCommand(String name)
     {
         super(name);
     }
     ;
 
     public void execute(final CommandSender sender, final String[] args) {
-        if(sender.hasPermission("lifeban.unban")) {
+        if(sender.hasPermission("bungeeban.command.unban")) {
             if(args.length == 1) {
                 String playerName = args[0];
                 Profile profile = new Profile(playerName);
