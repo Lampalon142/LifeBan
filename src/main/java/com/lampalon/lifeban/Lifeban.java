@@ -45,6 +45,7 @@ public final class Lifeban extends Plugin {
         pm.registerCommand(getInstance(), new UnbanCommand("unban"));
         pm.registerCommand(getInstance(), new CheckCommand("check"));
         pm.registerCommand(getInstance(), new MuteCommand("mute"));
+        utils();
     }
     public static Lifeban getInstance() {
         return instance;
