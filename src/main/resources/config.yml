@@ -55,7 +55,7 @@ messages:
     - '&cRemaining time: &e{REMAININGTIME}'
 
   ban:
-    syntax: '&cUsage: &c/ban <Player> <Time> <TimeUnit> <Reason>'
+    syntax: '&cUsage: &c/ban <Player> <Time> <Reason>'
     banned: '&aYou have successfully banned &e{NAME}&a.'
     none_reason: '§cNo reason specified'
     broadcast:
@@ -70,7 +70,7 @@ messages:
       - '&e{NAME} &chas been unbanned by &e{BY}&c.'
 
   mute:
-    syntax: '&cUsage: &c/mute <Player> <Time> <TimeUnit> <Reason>'
+    syntax: '&cUsage: &c/mute <Player> <Time> <Reason>'
     muted: '&aYou have successfully muted &e{NAME}&a.'
     none_reason: '§cNo reason specified'
     broadcast:
